@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>N E W  T A B</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative&family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<button type="button" id="settingsPanelOpen" class="topRight">EDIT</button>
+		<h1>NEW TAB</h1>
+
+		<div class="searchBox">
+			<form id="searchBoxForm" action="https://www.google.com/search" method="GET">
+				<input  type="text" name="q" id="searchBoxInput" placeholder="🔎︎" autofocus>
+			</form>
+		</div>
+
+		<div class="panels">
+			<div class="halfpanel left">
+				<div class="featuredPicturesContainer">
+					<img class="featuredPicturesImage" id="featuredPicturesImage">
+					<p class="featuredPicturesLabel" id="featuredPicturesLabel"></p>
+				</div>
+			</div>
+			<div class="halfpanel right">
+				<div class="pinnedSitesContainer" id="pinnedSitesContainer"></div>
+			</div>
+		</div>
+		
+		<div class="settingsPanel" id="settingsPanel" style="display: none;">
+
+			<button type="button" id="settingsPanelClose" class="topRight">Close</button>
+			<h2>Settings</h2>
+			
+			<h3>Featured Pictures</h3>
+			<div id="featuredPicturesSettings">
+				<form>	
+					<div>
+						<label for="localRadio">
+							local
+							<input type="radio" id="localRadio" name="source" value="localRadio">
+						</label>
+						<label for="remoteRadio">
+							remote
+							<input type="radio" id="remoteRadio" name="source" value="remoteRadio">
+						</label>
+					</div>
+					
+					<span class="remoteInputs">
+						<div class="inputGroup flexWrap">
+							<input type="text" name="remoteInput" id="remoteInput" placeholder="Link to a json file of image links" />
+						</div>
+					</span>	
+
+					<div class="localInputs">
+						<!-- placeholder element -->
+					</div>
+
+					<button type="button" class="addInput">➕ Add New</button>
+					<button type="submit">💾 Save</button>
+				</form>
+			</div>
+			
+			<h3>Pinned Sites</h3>
+			<div id="pinnedSitesSettings">
+				<form>
+					<div>
+						<label for="localRadio">
+							local
+							<input type="radio" id="localRadio" name="source" value="localRadio">
+						</label>
+						<label for="remoteRadio">
+							remote
+							<input type="radio" id="remoteRadio" name="source" value="remoteRadio">
+						</label>
+					</div>
+
+					<span class="remoteInputs">
+						<div class="inputGroup flexWrap">
+							<input type="text" name="remoteInput" id="remoteInput" placeholder="Link to a json file of site links" />
+						</div>
+					</span>
+
+					<div class="localInputs">
+						<!-- placeholder element -->
+					</div>
+
+					<button type="button" class="addInput">➕ Add New</button>
+					<button type="submit">💾 Save</button>
+				</form>
+			</div>
+
+		</div>
+
+		<script src="./js/search-box.js"></script>
+		<script src="./js/pinned-sites.js"></script>
+		<script src="./js/featured-pictures.js"></script>
+		<script src="./js/settings-panel.js"></script>
+	</body>
+</html>

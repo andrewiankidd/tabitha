@@ -1,0 +1,200 @@
+* {
+				transition: all 0.5s;
+			}
+			html {
+				--primary-color: rgb(34,36,54);
+				--secondary-color: rgb(127,133,163);
+				--accent-color: rgb(192,153,255);
+			}
+			body {
+				margin: 0px;
+
+				font-family: 'Bebas Neue', cursive;
+				text-align: center;
+
+				background: var(--primary-color);
+				color: var(--secondary-color);
+			}
+			
+			.flexWrap {
+				display: flex;
+				flex-wrap: wrap;
+				width: 90%;
+				margin: 0 auto;
+			}
+
+			h1, h2 {
+				font-family: 'Libre Barcode 39 Text', cursive;
+				font-size: 10vh;
+				margin: 30px;
+			}
+			h1:hover, h2:hover {
+				color: var(--accent-color);
+			}
+
+			input {
+				border-radius: 4px;
+				background: var(--primary-color);
+				color: var(--secondary-color);
+				border: 1px solid var(--secondary-color);
+			}
+			input[type='text'], input[type='submit'] {
+				display: block;
+			}
+			input[type='submit'], button {
+				background: var(--secondary-color);
+				color: var(--primary-color);
+				padding: 5px;
+				border-radius: 4px;
+			}
+
+			button.topRight {
+				margin: 20px;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+			}
+			
+			div.searchBox {
+    			max-width: 75%;
+				margin: 0 auto;
+			}
+			div.searchBox input {
+				font-size: 36pt;
+    			width: 100%;
+				margin: 20px;
+				padding: 5px;
+			}
+			div.searchBox:hover input, div.searchBox input:focus {
+    			color: var(--accent-color);
+				border: 1px solid var(--accent-color);
+			}
+			
+			div.panels {
+				display: flex;
+			}
+			div.halfpanel {
+				min-height: 80vh;
+			}
+
+			/* left column */
+			div.left {
+				flex: 30%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			div.featuredPicturesContainer {
+				max-width: 70%;
+			}
+			div.featuredPicturesContainer img.featuredPicturesImage {
+				max-width: 100%;
+    			max-height: 100%;
+				margin: 0;
+				border: 10px solid var(--secondary-color);
+				border-radius: 4px;
+			}
+			div.featuredPicturesContainer:hover img.featuredPicturesImage {
+				border: 10px solid var(--accent-color);
+			}
+			div.featuredPicturesContainer p.featuredPicturesLabel {
+				color: var(--secondary-color);
+				font-family: 'Cinzel Decorative', cursive;
+			}
+			div.featuredPicturesContainer:hover p.featuredPicturesLabel {
+				color: var(--accent-color);
+			}
+			
+			/* right column */
+			div.right {
+				flex: 70%;
+			}
+			div.pinnedSitesContainer {
+				column-count: 2;
+    			max-width: 95%;
+			}
+			div.pinnedSitesContainer details {
+				background: var(--secondary-color);
+				color: var(--primary-color);
+				margin-bottom: 20px;
+				width: 100%;
+				break-inside: avoid-column;
+				min-height:50px;
+				padding: 10px 0px 10px 0px;
+				border-radius: 4px;
+			}
+			div.pinnedSitesContainer details:hover {
+				background: var(--accent-color);
+			}
+			div.pinnedSitesContainer details summary {
+				font-family: 'Libre Barcode 39 Text', cursive;
+				font-size: 36pt;
+				list-style-type: none;
+			}
+
+			div.pinnedSitesContainer details summary::-webkit-details-marker {
+				display: none;
+			}
+			div.pinnedSitesContainer details li {
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+				border-radius: 4px;
+				background: var(--primary-color);
+				padding: 5px 10px 5px 10px;
+				font-size: 20pt;
+			}
+			div.pinnedSitesContainer details li img {
+				filter: grayscale(100%);
+				margin-right: 5px;
+			}
+			div.pinnedSitesContainer details li:hover img {
+				filter: none;
+			}
+			div.pinnedSitesContainer details li a {
+				color: var(--secondary-color);
+				text-decoration: none;
+				font-weight: bold;
+			}
+			div.pinnedSitesContainer details li:hover a {
+				color: var(--accent-color);
+			}
+			
+			div.settingsPanel {
+				min-height: 70vh;
+				max-height: 90vh;
+				width: 70vw;
+				min-width: 400px;
+				overflow-y: auto;
+				overflow-x: hidden;
+				background: red;
+				position: absolute;
+				float: left;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background: var(--primary-color);
+				color: var(--secondary-color);
+				border: 3px solid var(--secondary-color);
+				box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			}
+			div.settingsPanel .localInputs {
+				max-height: 400px;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+			div.settingsPanel .inputGroup .inputSet {
+				width: 100%;
+			}
+			div.settingsPanel form {
+				width: 90%
+				margin: 0 auto;
+			}
+			div.settingsPanel form .flexWrap input,
+			div.settingsPanel form .flexWrap strong {
+				flex-grow: 1;
+			}
+			
+			div.settingsPanel form .inputGroup input[type="text"]:not(:last-child) {
+				width: 20%;
+			}
