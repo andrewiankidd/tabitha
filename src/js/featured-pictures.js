@@ -7,7 +7,7 @@ function loadfeaturedPictures() {
 		
 		// apply default data if none provided
 		if (!localStorage['featured-pictures']) {			
-			localStorage['featured-pictures'] = './json/sites.json';
+			localStorage['featured-pictures'] = './json/images.json';
 		}
 		
 		// if value is link to json file
