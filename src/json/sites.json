@@ -1,0 +1,103 @@
+{
+	"Social": [{
+			"title": "GMail",
+			"url": "https://gmail.com"
+		},
+		{
+			"title": "GCalendar",
+			"url": "https://calendar.google.com/calendar/"
+		},
+		{
+			"title": "WhatsAppWeb",
+			"url": "https://web.whatsapp.com"
+		},
+		{
+			"title": "Reddit",
+			"url": "https://reddit.com"
+		},
+		{
+			"title": "Instagram",
+			"url": "https://instagram.com"
+		},
+		{
+			"title": "Twitter",
+			"url": "https://twitter.com"
+		}
+	],
+	"Media": [{
+			"title": "YouTube",
+			"url": "https://www.youtube.com/feed/subscriptions"
+		},
+		{
+			"title": "YouTubeMusic",
+			"url": "https://music.youtube.com"
+		},
+		{
+			"title": "Netflix",
+			"url": "https://netflix.com"
+		},
+		{
+			"title": "PrimeVideo",
+			"url": "https://www.amazon.co.uk/gp/video/"
+		},
+		{
+			"title": "Disney+",
+			"url": "https://www.disneyplus.com/en-gb/video/"
+		}
+	],
+	"Dev": [{
+			"title": "GitLab",
+			"url": "https://gitlab.com/dashboard/projects"
+		},
+		{
+			"title": "GitHub",
+			"url": "https://github.com"
+		},
+		{
+			"title": "JSON Lint",
+			"url": "https://jsonlint.com/"
+		},
+		{
+			"title": "DNS Dig",
+			"url": "https://toolbox.googleapps.com/apps/dig/#ANY/"
+		},
+		{
+			"title": "Regex Test",
+			"url": "https://regexr.com/"
+		}
+	],
+	"News": [{
+			"title": "TheRegister",
+			"url": "https://theregister.com/"
+		},
+		{
+			"title": "BleepingComputer",
+			"url": "https://bleepingcomputer.com/"
+		},
+		{
+			"title": "Wololo",
+			"url": "https://wololo.net/"
+		},
+		{
+			"title": "XDA",
+			"url": "https://www.xda-developers.com/"
+		}
+	],
+	"Blogs": [{
+			"title": "TheDailyWTF",
+			"url": "https://thedailywtf.com"
+		},
+		{
+			"title": "HackADay",
+			"url": "https://hackaday.com"
+		},
+		{
+			"title": "Dilbert",
+			"url": "https://dilbert.com"
+		},
+		{
+			"title": "CommitStrip",
+			"url": "https://www.commitstrip.com/en/"
+		}
+	]
+}
