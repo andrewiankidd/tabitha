@@ -145,8 +145,8 @@ function refreshSettingsPanelSection(settingSelector, localStorageKey, defaultOb
 		// prompt for category
 		// By default show the first Category
 		// todo show all seperated by bar?
-		const categoryDefault = settingsContainer.querySelector("input[name=inputGroupTitle]").value;
-		const inputCategory = prompt("Category", categoryDefault);
+		const categoryDefault = settingsContainer.querySelector("input[name=inputGroupTitle]");
+		const inputCategory = prompt("Category", categoryDefault ? categoryDefault.value : 'New Category');
 		
 		// get group to append to
 		const inputGroupValues = settingsContainer.querySelector(`div#${inputCategory}-inputGroupValues`);
@@ -183,7 +183,7 @@ function refreshSettingsPanelSection(settingSelector, localStorageKey, defaultOb
 		} else if (localCheckbox.checked) {
 			
 			// get input groups
-			let inputGroups = document.querySelector('#pinnedSitesSettings .localInputs').querySelectorAll('.inputGroup');
+			let inputGroups = localContainer.querySelectorAll('.inputGroup');
 			
 			obj = {}
 			inputGroups.forEach(inputGroup => {
@@ -220,7 +220,7 @@ function toggleSettingsPanel() {
 		refreshSettingsPanelSection('div#featuredPicturesSettings', 'featured-pictures', {url: ''});
 		
 		// pinned site settings
-		refreshSettingsPanelSection('div#pinnedSitesSettings', 'pinned-sites', {url: '', title: ''});
+		refreshSettingsPanelSection('div#pinnedSitesSettings', 'pinned-sites', {title: '', url: ''});
 	}
 }
 
