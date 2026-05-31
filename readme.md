@@ -1,3 +1,7 @@
+<p align="center">
+	<img src="./assets/logo.svg" alt="Tabitha logo" width="180" height="180" />
+</p>
+
 # Tabitha
 ##### _Customizable New Tab Page_
 ##### &nbsp;
@@ -25,3 +29,6 @@ Tabitha is deployed to GitHub Pages
 ## Notes
 You can use a browser extension to synchronize your settings between browsers:
  - [Simple Storage Sync](https://github.com/andrewiankidd/simple-storage-sync)
+
+## Credits
+Logo is the 🧙‍♀️ _woman mage_ emoji from [Twemoji](https://github.com/jdecked/twemoji), licensed [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
